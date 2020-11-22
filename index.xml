@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home</title>
+    <link>https://Code-SameerKhan.github.io/portfolio/</link>
+    <description>Recent content on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Employee Resignation Prediction</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</guid>
+      <description>Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90.</description>
+    </item>
+    
+    <item>
+      <title>Home Price Prediction</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/home-price-prediction/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/home-price-prediction/</guid>
+      <description>Summary Summary
+ Created a tool that calculates and predicts home prices based on various features. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Linear, Lasso and Decision Tree regressor using GridSearchCV to reach best model. Achieved an accuracy of 90.62% in correctly predicting the outcome.  Some of the major factors include price, number of bedrooms , bathrooms, location, etc… By correlating the different features we can arrive on a decision based on the prediction.</description>
+    </item>
+    
+    <item>
+      <title>DERA</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/portfolio/dera/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/portfolio/dera/</guid>
+      <description>This is a Java reference implementation of dynamic event-driven actors runtime aiming at providing adequate abstraction levels and mechanisms for modelling and developing (distributed) event-based systems. DERA leverages the intrinsic loose coupling of event-driven communication styles to support various kinds of run-time evolution and adaptation (i.e., enabling run-time flexibility) while minimizing the non-deterministic nature of traditional event-based applications (i.e., supporting formal analysis).</description>
+    </item>
+    
+    <item>
+      <title>hyde-hyde</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/portfolio/hyde-hyde/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/portfolio/hyde-hyde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaraMod</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/portfolio/laramod/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/portfolio/laramod/</guid>
+      <description>LaraMod is another modularisation effort to systematically organising a Laravel based project. The idea stems from my struggle to structure a Laravel-based project so that I can work effectively on individual modules whilst keeping Laravel codebase intact as much as possible and also keeping the project&amp;rsquo;s codebase separate from Laravel.</description>
+    </item>
+    
+    <item>
+      <title> Professional Experience</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/projects/</guid>
+      <description>Business Analyst (July 2019 - Present) Techsol Engineering Services Pvt Ltd     Built Linear regression based machine learning model to predict failure in mechanical components. Deployed algorithm to forecast monthly spare usage thus reducing the losses and helping make better business decision. Been part of the team targeted towards reducing the cost effective loses, successfully modelled a gain of 13% in profits Worked on automation on of PLC based logic control and analyzed the functioning of the compressors based on the data extracted through PLC.</description>
+    </item>
+    
+    <item>
+      <title>About Sameer!</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/about/</guid>
+      <description>Hi! An engineer, a student, a gamer, a wildlife and nature enthusiast &amp;amp; an eternal admirer of new journals on modern technology. Hi! I am Sameer Khan and welcome to my Data Science portfolio.
+I have been working specifically in the dominion of Data Science from July of 2019 but the interest developed much earlier. While still working as a mechanical engineer I came across a project which demanded attention as little to my knowledge would change the course of my dedication to my field.</description>
+    </item>
+    
+    <item>
+      <title>Contact me</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/contact/</guid>
+      <description> Follow me on these media platforms.
+   Platform URL     LinkedIn: https://www.linkedin.com/in/sameer-khan-engg15/   Github: https://github.com/Code-SameerKhan   Facebook: https://www.facebook.com/OfficerSam/    </description>
+    </item>
+    
+    <item>
+      <title>First snippet</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/snippets/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/snippets/first/</guid>
+      <description>This content is in snippets/first/index.md
+pwd </description>
+    </item>
+    
+    <item>
+      <title>Second snippet</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/snippets/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/snippets/second/</guid>
+      <description>This content is in snippets/second/index.md
+ls -la </description>
+    </item>
+    
+  </channel>
+</rss>

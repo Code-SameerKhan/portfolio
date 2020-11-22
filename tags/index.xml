@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on home</title>
+    <link>https://Code-SameerKhan.github.io/portfolio/tags/</link>
+    <description>Recent content in Tags on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decision Tree classifier</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine learning</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Decision Tree regressor</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-regressor/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-regressor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Regression</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/linear-regression/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/linear-regression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

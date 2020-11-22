@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sameer Khan on home</title>
+    <link>https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/</link>
+    <description>Recent content in Sameer Khan on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Employee Resignation Prediction</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</guid>
+      <description>Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90.</description>
+    </item>
+    
+    <item>
+      <title>Home Price Prediction</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/home-price-prediction/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/home-price-prediction/</guid>
+      <description>Summary Summary
+ Created a tool that calculates and predicts home prices based on various features. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Linear, Lasso and Decision Tree regressor using GridSearchCV to reach best model. Achieved an accuracy of 90.62% in correctly predicting the outcome.  Some of the major factors include price, number of bedrooms , bathrooms, location, etc… By correlating the different features we can arrive on a decision based on the prediction.</description>
+    </item>
+    
+  </channel>
+</rss>

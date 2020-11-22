@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Sameer Khan">
+    <meta name="description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90.">
+    <meta name="keywords" content="data science,portfolio,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Employee Resignation Prediction"/>
+<meta name="twitter:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90."/>
+
+    <meta property="og:title" content="Employee Resignation Prediction" />
+<meta property="og:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/" />
+<meta property="article:published_time" content="2019-01-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-01-29T00:00:00+00:00" />
+
+
+    <title>
+  Employee Resignation Prediction · home
+</title>
+
+    
+      <link rel="canonical" href="https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://Code-SameerKhan.github.io/portfolio/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/about/">About me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/posts/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/projects/">Experience</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Employee Resignation Prediction</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-01-29T00:00:00Z'>
+                January 29, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/">Sameer Khan</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/categories/supervised-learning/">Supervised learning</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/">Logistic Regression</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/">Decision Tree classifier</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/">Machine learning</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="summary">Summary</h2>
+<ul>
+<li>Created a tool that predicts when an employee is going to resign
+in order to help perfect employee management and improve working
+space environment.</li>
+<li>Based on the public release data available on Kaggle, the
+features are employed.</li>
+<li>Engineered features to calculate dependencies of the target
+variable on the independent variables.</li>
+<li>Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes
+classifier using GridSearchCV to reach best model.</li>
+<li>Achieved an accuracy of 90.62% in correctly predicting the
+outcome.</li>
+</ul>
+<p>Getting to understand employees is a major task in any successful organization. Various factors combine enough to create a snowball effect in the minds of employee on whether he/she sees the future of oneself in their current working environment.</p>
+<p>Some of the major factors include Salary, Satisfaction level, promotion, average working hours, etc… By correlating the different features we can arrive on a decision based on the prediction. Since the output here is whether the employee leaves or not therefore it is termed as a classification problem.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/vs_salary.png"/> <figcaption>
+            <h4>Impact of salary on employee retention</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/vs_monthly_hours.png"/> <figcaption>
+            <h4>Impact of average working hours on employee retention</h4>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/vs_promotion.png"/> <figcaption>
+            <h4>Dynamic relationship between average montly hours, salary, left and promotion last 5 years</h4>
+        </figcaption>
+</figure>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>From above charts we can conclude these points-</p>
+<ul>
+<li>
+<p>Employees with high salaries are more likely to stay with the company for
+longer duration whereas mid to lower tier salary employees are more likely to
+quit.</p>
+</li>
+<li>
+<p>Average monthly hours plays a major role in mindset on employees. From the visualization we can clearly see that some employees even with similar working hours have a high difference in quitting an organization just because they lie in different salary cap.</p>
+</li>
+<li>
+<p>Finally a reward for studious work is also expected from employees as we can see. Based on the data, promotion in last 5 years plays a role to defining a future of an individual with the group.</p>
+</li>
+</ul>
+<h1 id="model-building">Model building</h1>
+<p>Since this is a classification problem we can employ following algorithms -</p>
+<ul>
+<li>Logistic regressor</li>
+<li>Decision tree</li>
+<li>Naive Bayes</li>
+<li>Support Vector Machine (SVM)</li>
+<li>Random Forest</li>
+</ul>
+<h1 id="result">Result</h1>
+<p>Using GridSearchCV we can pass a list of different values in a dictionary of parameters and with the help of it we can determine best model as a well as best parameters.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/model_employee.png"/> <figcaption>
+            <h4>GridSearchCV model and parameters determination</h4>
+        </figcaption>
+</figure>
+
+<p>In the end we can say Decision tree classifier works best giving an accuracy of 90.62 %</p>
+<p><a href="https://github.com/Code-SameerKhan/Employee-resignation-prediction">Link to GitHub repository</a></p>
+
+      </div>
+
+
+      <footer>
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Welcome to my portfolio.</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Sameer Khan 
+      
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="https://Code-SameerKhan.github.io/portfolio/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>
