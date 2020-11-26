@@ -7,27 +7,27 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Sameer Khan">
-    <meta name="description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90.">
+    <meta name="description" content="Summary  To predict whether revenue would be generated when a customer visit a website page Based on the features available for a website we need to predict whether a visit from a customer would result in generation in revenue. By analysis of a customer&rsquo;s behavior pattern e.g- type of product been searched, duration of stay, we can determine the optimal variation that would corresponds to maximization of correlation of dependency of target variable on independent feature.">
     <meta name="keywords" content="data science,portfolio,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Employee Resignation Prediction"/>
-<meta name="twitter:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90."/>
+<meta name="twitter:title" content="Revenue Generation Prediction"/>
+<meta name="twitter:description" content="Summary  To predict whether revenue would be generated when a customer visit a website page Based on the features available for a website we need to predict whether a visit from a customer would result in generation in revenue. By analysis of a customer&rsquo;s behavior pattern e.g- type of product been searched, duration of stay, we can determine the optimal variation that would corresponds to maximization of correlation of dependency of target variable on independent feature."/>
 
-    <meta property="og:title" content="Employee Resignation Prediction" />
-<meta property="og:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90." />
+    <meta property="og:title" content="Revenue Generation Prediction" />
+<meta property="og:description" content="Summary  To predict whether revenue would be generated when a customer visit a website page Based on the features available for a website we need to predict whether a visit from a customer would result in generation in revenue. By analysis of a customer&rsquo;s behavior pattern e.g- type of product been searched, duration of stay, we can determine the optimal variation that would corresponds to maximization of correlation of dependency of target variable on independent feature." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/" />
-<meta property="article:published_time" content="2019-01-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-01-29T00:00:00+00:00" />
+<meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/revenue-generation-prediction/" />
+<meta property="article:published_time" content="2019-02-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-02-05T00:00:00+00:00" />
 
 
     <title>
-  Employee Resignation Prediction · home
+  Revenue Generation Prediction · home
 </title>
 
     
-      <link rel="canonical" href="https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/">
+      <link rel="canonical" href="https://Code-SameerKhan.github.io/portfolio/posts/revenue-generation-prediction/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -126,14 +126,14 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Employee Resignation Prediction</h1>
+          <h1 class="title">Revenue Generation Prediction</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2019-01-29T00:00:00Z'>
-                January 29, 2019
+              <time datetime='2019-02-05T00:00:00Z'>
+                February 5, 2019
               </time>
             </span>
             <span class="reading-time">
@@ -150,9 +150,7 @@
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/">Logistic Regression</a>
-      <span class="separator">•</span>
-    <a href="https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/">Decision Tree classifier</a>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/knn/">KNN</a>
       <span class="separator">•</span>
     <a href="https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/">Machine learning</a></div>
 
@@ -163,72 +161,78 @@
         
         <h2 id="summary">Summary</h2>
 <ul>
-<li>Created a tool that predicts when an employee is going to resign
-in order to help perfect employee management and improve working
-space environment.</li>
-<li>Based on the public release data available on Kaggle, the
-features are employed.</li>
-<li>Engineered features to calculate dependencies of the target
-variable on the independent variables.</li>
-<li>Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes
-classifier using GridSearchCV to reach best model.</li>
-<li>Achieved an accuracy of 90.62% in correctly predicting the
-outcome.</li>
+<li>To predict whether revenue would be generated when a customer visit a website page</li>
+<li>Based on the features available for a website we need to predict whether a visit from a customer would result in generation in revenue.</li>
+<li>By analysis of a customer&rsquo;s behavior pattern e.g- type of product been searched, duration of stay, we can determine the optimal variation that would corresponds to maximization of correlation of dependency of target variable on independent feature.</li>
+<li>With the help of analysis through visualization calculated better enhancements for more streamline target output, in this case revenue generation.</li>
+<li>Deployed clustering algorithm such as KNN to predict the outcome</li>
+<li>Arrived at an accuracy of 85.915%</li>
 </ul>
-<p>Getting to understand employees is a major task in any successful organization. Various factors combine enough to create a snowball effect in the minds of employee on whether he/she sees the future of oneself in their current working environment.</p>
-<p>Some of the major factors include Salary, Satisfaction level, promotion, average working hours, etc… By correlating the different features we can arrive on a decision based on the prediction. Since the output here is whether the employee leaves or not therefore it is termed as a classification problem.</p>
+<p>In websites the amount of traffic can determine the revenue generated by keeping an eye on the customer visit on the webpage.</p>
+<p>Like any other data, it contain various features which determine the outcome and lay an impact on the outcome.</p>
 <figure>
-    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/vs_salary.png"/> <figcaption>
-            <h4>Impact of salary on employee retention</h4>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Revenue/customer.png"/> <figcaption>
+            <h4>Number of customers in various features</h4>
         </figcaption>
 </figure>
 
-<figure>
-    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/vs_monthly_hours.png"/> <figcaption>
-            <h4>Impact of average working hours on employee retention</h4>
-        </figcaption>
-</figure>
-
-<figure>
-    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/vs_promotion.png"/> <figcaption>
-            <h4>Dynamic relationship between average montly hours, salary, left and promotion last 5 years</h4>
-        </figcaption>
-</figure>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>From above charts we can conclude these points-</p>
+<p>Based on the above bar charts we can determine -</p>
 <ul>
-<li>
-<p>Employees with high salaries are more likely to stay with the company for
-longer duration whereas mid to lower tier salary employees are more likely to
-quit.</p>
-</li>
-<li>
-<p>Average monthly hours plays a major role in mindset on employees. From the visualization we can clearly see that some employees even with similar working hours have a high difference in quitting an organization just because they lie in different salary cap.</p>
-</li>
-<li>
-<p>Finally a reward for studious work is also expected from employees as we can see. Based on the data, promotion in last 5 years plays a role to defining a future of an individual with the group.</p>
-</li>
+<li>The features in which we have the highest number of customer visits which helps us to understand the customer trend.</li>
+<li>We identify Product Related query to be the most sort out.</li>
 </ul>
-<h1 id="model-building">Model building</h1>
-<p>Since this is a classification problem we can employ following algorithms -</p>
-<ul>
-<li>Logistic regressor</li>
-<li>Decision tree</li>
-<li>Naive Bayes</li>
-<li>Support Vector Machine (SVM)</li>
-<li>Random Forest</li>
-</ul>
-<h1 id="result">Result</h1>
-<p>Using GridSearchCV we can pass a list of different values in a dictionary of parameters and with the help of it we can determine best model as a well as best parameters.</p>
+<h2 id="determining-share-of-categorical-features">Determining share of categorical features</h2>
 <figure>
-    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/model_employee.png"/> <figcaption>
-            <h4>GridSearchCV model and parameters determination</h4>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Revenue/visual-charts.png"/> 
+</figure>
+
+<p>In the above pie chart we can determine the dominance of a single category over the rest.</p>
+<h2 id="determining-the-correlation">Determining the correlation</h2>
+<p>Correlation plays an important role factoring the most important features that play highly critical role. By giving an attention to these specfic features would hamper the target greatly.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Revenue/correlation.png"/> <figcaption>
+            <h4>Correlation in continuous features</h4>
         </figcaption>
 </figure>
 
-<p>In the end we can say Decision tree classifier works best giving an accuracy of 90.62 %</p>
-<p><a href="https://github.com/Code-SameerKhan/Employee-resignation-prediction">Link to GitHub repository</a></p>
+<p>Following observations are made-</p>
+<ul>
+<li>Revenue has a direct proportionality with Page values.</li>
+<li>Revenue has inverse proportionality with exit rates and bounce rates.</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Revenue/heatmap_correlation.png"/> <figcaption>
+            <h4>Correlation heatmap</h4>
+        </figcaption>
+</figure>
+
+<h2 id="modeling-and-prediction">Modeling and Prediction</h2>
+<p>This problem corresponds to classification problem and KNN or K nearest neighbor classifier can be employed in usage.</p>
+<p>KNN can be used for both classification and regression predictive problems. However, it is more widely used in classification problems in the industry. To evaluate any technique we generally look at 3 important aspects:</p>
+<ul>
+<li>Ease to interpret output</li>
+<li>Calculation time</li>
+<li>Predictive Power</li>
+</ul>
+<p>Value of K can be determined by calculating Euclidean distance as our distance metric since it’s the most popular method. The other metrics that can be used are Chebyshev, cosine, etc.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Revenue/K_value.png"/> <figcaption>
+            <h4>Optimal number of neighbors</h4>
+        </figcaption>
+</figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>We determine optimal value of K is 4</li>
+<li>Model performs with an accuracy of 86%</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Revenue/report.png"/> <figcaption>
+            <h4>Classfication report</h4>
+        </figcaption>
+</figure>
+
+<p><a href="https://github.com/Code-SameerKhan/Revenue-generation-prediction">Link to GitHub repository</a></p>
 
       </div>
 

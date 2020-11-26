@@ -6,7 +6,16 @@
     <description>Recent content in Supervised learning on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/categories/supervised-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/categories/supervised-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revenue Generation Prediction</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/revenue-generation-prediction/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/revenue-generation-prediction/</guid>
+      <description>Summary  To predict whether revenue would be generated when a customer visit a website page Based on the features available for a website we need to predict whether a visit from a customer would result in generation in revenue. By analysis of a customer&amp;rsquo;s behavior pattern e.g- type of product been searched, duration of stay, we can determine the optimal variation that would corresponds to maximization of correlation of dependency of target variable on independent feature.</description>
+    </item>
+    
     <item>
       <title>Employee Resignation Prediction</title>
       <link>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</link>
