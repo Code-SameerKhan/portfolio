@@ -6,7 +6,43 @@
     <description>Recent content in Tags on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistic Regression</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine learning</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Forest classifier</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/random-forest-classifier/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/random-forest-classifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SVM</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/tags/svm/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/tags/svm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>KNN</title>
       <link>https://Code-SameerKhan.github.io/portfolio/tags/knn/</link>
@@ -17,29 +53,11 @@
     </item>
     
     <item>
-      <title>Machine learning</title>
-      <link>https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Decision Tree classifier</title>
       <link>https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Logistic Regression</title>
-      <link>https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/</link>
-      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/</guid>
       <description></description>
     </item>
     

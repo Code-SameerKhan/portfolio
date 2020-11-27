@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Sameer Khan">
+    <meta name="description" content="Objective  Model developed to identify an image and classify accordingly.  Summary Image classification falls under classification algorithm of Machine learning. Classification algorithm works under the premise of finding the pattern and associate it with a class. In this project, a model is developed to perform similar objective but with a little upgradation.
+Similar to the regular numerical nature of data, images are identified by the machine in the form of array consisting of numerical values and depending upon the color scheme it can be divided into 3 dimension or 2 dimension (i.">
+    <meta name="keywords" content="data science,portfolio,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Image classification by Facial Recognition"/>
+<meta name="twitter:description" content="Objective  Model developed to identify an image and classify accordingly.  Summary Image classification falls under classification algorithm of Machine learning. Classification algorithm works under the premise of finding the pattern and associate it with a class. In this project, a model is developed to perform similar objective but with a little upgradation.
+Similar to the regular numerical nature of data, images are identified by the machine in the form of array consisting of numerical values and depending upon the color scheme it can be divided into 3 dimension or 2 dimension (i."/>
+
+    <meta property="og:title" content="Image classification by Facial Recognition" />
+<meta property="og:description" content="Objective  Model developed to identify an image and classify accordingly.  Summary Image classification falls under classification algorithm of Machine learning. Classification algorithm works under the premise of finding the pattern and associate it with a class. In this project, a model is developed to perform similar objective but with a little upgradation.
+Similar to the regular numerical nature of data, images are identified by the machine in the form of array consisting of numerical values and depending upon the color scheme it can be divided into 3 dimension or 2 dimension (i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/facial-recognition-classifier/" />
+<meta property="article:published_time" content="2019-02-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-02-15T00:00:00+00:00" />
+
+
+    <title>
+  Image classification by Facial Recognition · home
+</title>
+
+    
+      <link rel="canonical" href="https://Code-SameerKhan.github.io/portfolio/posts/facial-recognition-classifier/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://Code-SameerKhan.github.io/portfolio/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/projects/">Experience</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/posts/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/about/">About me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Image classification by Facial Recognition</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-02-15T00:00:00Z'>
+                February 15, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/">Sameer Khan</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/categories/supervised-learning/">Supervised learning</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/svm/">SVM</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/random-forest-classifier/">Random Forest classifier</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/">Logistic Regression</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/">Machine learning</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="objective">Objective</h2>
+<ul>
+<li>Model developed to identify an image and classify accordingly.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Image classification falls under classification algorithm of Machine learning. Classification algorithm works under the premise of finding the pattern and associate it with a class. In this project, a model is developed to perform similar objective but with a little upgradation.</p>
+<p>Similar to the regular numerical nature of data, images are identified by the machine in the form of array consisting of numerical values and depending upon the color scheme it can be divided into 3 dimension or 2 dimension (i.e, in the case of Black and white image or Gray Scaled image)</p>
+<h2 id="importing-the-data">Importing the Data</h2>
+<p>Using the OpenCV library we import images onto our Jupyter notebook to perform some tests to identify and spot differences.</p>
+<p>OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library that detect and recognize faces to classify human action.</p>
+<p>OpenCV helps in identifying region of interest or the facial features defined in HAAR featured cascade classifier.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Facial/cris.png"/> <figcaption>
+            <h4>Test Image of Cristiano Ronaldo</h4>
+        </figcaption>
+</figure>
+
+<p>The image imported is in 3 Dimensions since it is a color picture corresponding to RGB color scheme, therefore there is a need to grey scale it.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Facial/grey_cris.png"/> <figcaption>
+            <h4>Grey scaled image</h4>
+        </figcaption>
+</figure>
+
+<h2 id="identification-region-of-interest">Identification region of interest</h2>
+<p>The important part in image classification is identifying the subtle difference in one&rsquo;s facial map and features.
+To accomplish the goal we employ the usage of Haar featured cascade classifier to detect (in this case) face map and eyes.</p>
+<p>By providing the classifier with many photos and negatives, classifier identifies and extracts the object useful for the operations.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Facial/cascade_image.png"/> <figcaption>
+            <h4>Cascade identified image</h4>
+        </figcaption>
+</figure>
+
+<h2 id="wavelet-transformation">Wavelet transformation</h2>
+<p>To identify the difference between 2 images, transformation of image is necessary. Wavelet transformation helps in that regard.</p>
+<p>The wavelet analysis method is a time-frequency analysis method which selects the appropriate frequency band adaptively based on the characteristics of the signal.</p>
+<p>Then the frequency band matches the spectrum which improves the time-frequency resolution. The wavelet analysis method has an obvious effect on the removal of noise in the signal.</p>
+<p>According to the features of the multi-scale edge of the wavelet, the de-noising method of the orthogonal wavelet transform which based on soft and hard threshold.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Facial/wavelet.png"/> <figcaption>
+            <h4>Wavelet transformed image</h4>
+        </figcaption>
+</figure>
+
+<p>The images after the transformation is vertically stacked up against the original gray scaled image to form a dataset to employee machine learning algorithm.</p>
+<h2 id="choosing-the-best-model">Choosing the Best model</h2>
+<p>Using GridSearchCv we can identify which model performs best among the various classification algorithms such as-</p>
+<ul>
+<li>Logistic Regression</li>
+<li>Random Forest classifier</li>
+<li>Support Vector Machine (SVM)</li>
+</ul>
+<p>GridseachCV not only helps us to choose the best model but also it helps us in achieving highest efficiency by determining best parameters for it.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Facial/classification_report.png"/> <figcaption>
+            <h4>classification report</h4>
+        </figcaption>
+</figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>We reached the conclusion that out Logistic regression model performs best with a score of 80%</p>
+<p>Plotting a relationship between the predicted values and actual values helps in order to rectify the mistakes or check the parameters which can we tweaked. Seaborn library provides powerful visualization to tackle that problem.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Facial/heatmap.png"/> <figcaption>
+            <h4>Heatmap</h4>
+        </figcaption>
+</figure>
+
+<h2 id="con">Con</h2>
+<p>The classifier requires a large amount of data to perform adequately, hence it is not advisable to use a small dataset.</p>
+<p><a href="https://github.com/Code-SameerKhan/Image-classifier-using-facial-recognition">Link to GitHub repository</a></p>
+
+      </div>
+
+
+      <footer>
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Welcome to my portfolio.</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Sameer Khan 
+      
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="https://Code-SameerKhan.github.io/portfolio/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

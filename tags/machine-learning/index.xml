@@ -6,7 +6,17 @@
     <description>Recent content in Machine learning on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Image classification by Facial Recognition</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/facial-recognition-classifier/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/facial-recognition-classifier/</guid>
+      <description>Objective  Model developed to identify an image and classify accordingly.  Summary Image classification falls under classification algorithm of Machine learning. Classification algorithm works under the premise of finding the pattern and associate it with a class. In this project, a model is developed to perform similar objective but with a little upgradation.
+Similar to the regular numerical nature of data, images are identified by the machine in the form of array consisting of numerical values and depending upon the color scheme it can be divided into 3 dimension or 2 dimension (i.</description>
+    </item>
+    
     <item>
       <title>Revenue Generation Prediction</title>
       <link>https://Code-SameerKhan.github.io/portfolio/posts/revenue-generation-prediction/</link>
