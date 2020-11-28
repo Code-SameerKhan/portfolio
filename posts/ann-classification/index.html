@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Sameer Khan">
+    <meta name="description" content="Summary  Model developed to accurately classify data in the form of images into proper classes. To employ the usage of Artificial neural network based model for prediction Deploying TensorFlow&rsquo;s Keras dense Network Achieved an accuracy of 99.26%  Dataset Data frame consists of handwritten images in the form of arrays of digits corresponding to the RGB color scheme. Each magnitude of the integer indicates the intensity of the brightness to form the image of digit.">
+    <meta name="keywords" content="data science,portfolio,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Artificial Neural Network based Classification"/>
+<meta name="twitter:description" content="Summary  Model developed to accurately classify data in the form of images into proper classes. To employ the usage of Artificial neural network based model for prediction Deploying TensorFlow&rsquo;s Keras dense Network Achieved an accuracy of 99.26%  Dataset Data frame consists of handwritten images in the form of arrays of digits corresponding to the RGB color scheme. Each magnitude of the integer indicates the intensity of the brightness to form the image of digit."/>
+
+    <meta property="og:title" content="Artificial Neural Network based Classification" />
+<meta property="og:description" content="Summary  Model developed to accurately classify data in the form of images into proper classes. To employ the usage of Artificial neural network based model for prediction Deploying TensorFlow&rsquo;s Keras dense Network Achieved an accuracy of 99.26%  Dataset Data frame consists of handwritten images in the form of arrays of digits corresponding to the RGB color scheme. Each magnitude of the integer indicates the intensity of the brightness to form the image of digit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/ann-classification/" />
+<meta property="article:published_time" content="2019-03-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-05T00:00:00+00:00" />
+
+
+    <title>
+  Artificial Neural Network based Classification · home
+</title>
+
+    
+      <link rel="canonical" href="https://Code-SameerKhan.github.io/portfolio/posts/ann-classification/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://Code-SameerKhan.github.io/portfolio/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/projects/">Experience</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/posts/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/about/">About me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Artificial Neural Network based Classification</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-03-05T00:00:00Z'>
+                March 5, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/">Sameer Khan</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/categories/supervised-learning/">Supervised learning</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/ann/">ANN</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/deep-learning/">Deep learning</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="summary">Summary</h2>
+<ul>
+<li>Model developed to accurately classify data in the form of images into proper classes.</li>
+<li>To employ the usage of Artificial neural network based model for prediction</li>
+<li>Deploying TensorFlow&rsquo;s Keras dense Network</li>
+<li>Achieved an accuracy of 99.26%</li>
+</ul>
+<h1 id="dataset">Dataset</h1>
+<p>Data frame consists of handwritten images in the form of arrays of digits corresponding to the RGB color scheme. Each magnitude of the integer indicates the intensity of the brightness to form the image of digit.</p>
+<p>These data points are in turn used to train the machine learning model to classify.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/ANN-digits/number_5.png"/> <figcaption>
+            <h4>Image of handwritten number (&#39;5&#39;)</h4>
+        </figcaption>
+</figure>
+
+<h2 id="model-development">Model development</h2>
+<h3 id="neural-network">Neural Network</h3>
+<p>A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. In this sense, neural networks refer to systems of neurons, either organic or artificial in nature.</p>
+<p>Neural networks can adapt to changing input; so the network generates the best possible result without needing to redesign the output criteria.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/ANN-digits/neural_network.png"/> <figcaption>
+            <h4>A simple neural network</h4>
+        </figcaption>
+</figure>
+
+<p>A neural network has many layers. Each layer performs a specific function, and the complex the network is, the more the layers are. That’s why a neural network is also called a multi-layer perceptron.</p>
+<p>The purest form of a neural network has three layers:</p>
+<ul>
+<li>The input layer</li>
+<li>The hidden layer</li>
+<li>The output layer</li>
+</ul>
+<p>As the names suggest, each of these layers has a specific purpose. These layers are made up of nodes. There can be multiple hidden layers in a neural network according to the requirements. The input layer picks up the input signals and transfers them to the next layer. It gathers the data from the outside world.</p>
+<p>The hidden layer performs all the back-end tasks of calculation. A network can even have zero hidden layers. However, a neural network has at least one hidden layer. The output layer transmits the final result of the hidden layer’s calculation.</p>
+<p>In Keras neural network model few parameters are to be checked:</p>
+<ul>
+<li>Input shape - It is required to have a single array instead of 2D or 3D</li>
+<li>Hidden layer - If specified (recommended) requires a network of neurons to work with algorithms such as Forward pass or back propagation</li>
+<li>Activation Function - Can be used from Linear/ Relu/ Tanh/ Sigmoid</li>
+<li>Ouput layer - Containing the classes</li>
+</ul>
+<p>Generally it is advisable to use hidden layers as many as possible to increase the interactions between neurons and hence reduce the error.</p>
+<h2 id="gradient-descent-or-optimizer">Gradient Descent or Optimizer</h2>
+<p>The gradient is a numeric calculation allowing us to know how to adjust the parameters of a network in such a way that its output deviation is minimized.</p>
+<h2 id="types-of-gradient-descent">Types of Gradient Descent</h2>
+<ul>
+<li>Batch gradient descent - Weights and bias is calculated and adjusted after every epoch</li>
+<li>Stochastic gradient descent - Weights and bias is calculated and adjusted after every training sample instead of epoch</li>
+<li>(Stochastic) Mini-batch gradient descent - Instead of every sample, a group of samples are executed and weights/bias is calculated accordingly</li>
+</ul>
+<p>In large datasets such as this, its inefficient to use batch gradient descent hence stochastic gradient descent is preferred.</p>
+<h2 id="model-performance">Model performance</h2>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/ANN-digits/model_eval.png"/> <figcaption>
+            <h4>Model performance</h4>
+        </figcaption>
+</figure>
+
+<p>Deployed neural network model and reached an accuracy of 99.26%</p>
+<h2 id="evaluation-and-conclusion">Evaluation and conclusion</h2>
+<p>Model showed an improvement an accuracy corresponding to higher number of neurons and hidden layers.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/ANN-digits/heatmap.png"/> <figcaption>
+            <h4>Truth vs Predicted</h4>
+        </figcaption>
+</figure>
+
+<p><a href="https://github.com/Code-SameerKhan/Handwritten-digits-classification">Link to GitHub repository</a></p>
+
+      </div>
+
+
+      <footer>
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Welcome to my portfolio.</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Sameer Khan 
+      
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="https://Code-SameerKhan.github.io/portfolio/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ANN on home</title>
+    <link>https://Code-SameerKhan.github.io/portfolio/tags/ann/</link>
+    <description>Recent content in ANN on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/tags/ann/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Neural Network based Classification</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/ann-classification/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/ann-classification/</guid>
+      <description>Summary  Model developed to accurately classify data in the form of images into proper classes. To employ the usage of Artificial neural network based model for prediction Deploying TensorFlow&amp;rsquo;s Keras dense Network Achieved an accuracy of 99.26%  Dataset Data frame consists of handwritten images in the form of arrays of digits corresponding to the RGB color scheme. Each magnitude of the integer indicates the intensity of the brightness to form the image of digit.</description>
+    </item>
+    
+  </channel>
+</rss>
