@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Sameer Khan">
+    <meta name="description" content="Build a blogging website using Flask   Flask    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.  Objective  To build website where a user can make account, make posts and upload photos as a profile picture.">
+    <meta name="keywords" content="data science,portfolio,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Web application based on Flask"/>
+<meta name="twitter:description" content="Build a blogging website using Flask   Flask    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.  Objective  To build website where a user can make account, make posts and upload photos as a profile picture."/>
+
+    <meta property="og:title" content="Web application based on Flask" />
+<meta property="og:description" content="Build a blogging website using Flask   Flask    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.  Objective  To build website where a user can make account, make posts and upload photos as a profile picture." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/flask-web-server/" />
+<meta property="article:published_time" content="2019-08-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-15T00:00:00+00:00" />
+
+
+    <title>
+  Web application based on Flask · home
+</title>
+
+    
+      <link rel="canonical" href="https://Code-SameerKhan.github.io/portfolio/posts/flask-web-server/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://Code-SameerKhan.github.io/portfolio/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Code-SameerKhan.github.io/portfolio/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://Code-SameerKhan.github.io/portfolio/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://Code-SameerKhan.github.io/portfolio/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/projects/">Experience</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/posts/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/about/">About me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://Code-SameerKhan.github.io/portfolio/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Web application based on Flask</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2019-08-15T00:00:00Z'>
+                August 15, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/">Sameer Khan</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/categories/web-application/">Web application</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/python/">Python</a>
+      <span class="separator">•</span>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/flask/">Flask</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="build-a-blogging-website-using-flask">Build a blogging website using Flask</h2>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/logo.png"/> <figcaption>
+            <h4>Flask</h4>
+        </figcaption>
+</figure>
+
+<ul>
+<li>Flask is a micro web framework written in Python.</li>
+<li>It is classified as a microframework because it does not require particular tools or libraries.</li>
+<li>It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide
+common functions.</li>
+</ul>
+<h1 id="objective">Objective</h1>
+<ul>
+<li>To build website where a user can make account, make posts and upload photos as a profile picture.</li>
+<li>To edit or modify posts as well as delete them also having them in an ordered fashion in a custom profile or account page.</li>
+<li>To have a functionality of sending a password reset request in case a user forgets its password.</li>
+</ul>
+<h2 id="layouts-and-requirements">Layouts and Requirements</h2>
+<p>Due to the nature of the website, a database handling system is greatly appreciated. This is achieved with the help of SQL Alchemy. In order to work to store data i.e, user email, passwords and also the posts the made by user, SQL Alchemy performs the task with the integration with python-flask.</p>
+<p>The layout is developed using html and css static codes combined with bootstrap classes to give a appeasing look and be more user friendly.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/home.png"/> <figcaption>
+            <h4>Home Page</h4>
+        </figcaption>
+</figure>
+
+<p>Flask helps in easily making a deployable web app by just executing a single python script but it is important to maintain a hierarchy in structure in order for future updates.</p>
+<h2 id="custom-error-handling">Custom error handling</h2>
+<p>Custom error templates are created to handle error such as 404, 403, 500 which extended of our base layout.html file containing the structure of visual layout which is inherited everywhere.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/error.png"/> <figcaption>
+            <h4>Error Page</h4>
+        </figcaption>
+</figure>
+
+<h2 id="pages-that-are-user-defined">Pages that are user defined</h2>
+<p>It consists of -</p>
+<ul>
+<li>Registration page</li>
+<li>Account page</li>
+<li>New post</li>
+<li>Login and Logout</li>
+<li>Forget password</li>
+<li>Custom error pages</li>
+</ul>
+<h3 id="registration-page">Registration Page</h3>
+<ul>
+<li>It contains the wt-forms class to receive the data of the user in the fields of Username, Email, Password and Confirm Password</li>
+<li>The username and the Email ID should be unique, if not the page throws and bootstrap class of failure error and the user has to go through the process again.</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/register.png"/> <figcaption>
+            <h4>Registration Page</h4>
+        </figcaption>
+</figure>
+
+<h2 id="account-page">Account page</h2>
+<ul>
+<li>This page contains personalized information of the user.</li>
+<li>It shows the posts made by the user only and not the posts of others.</li>
+<li>A user can upload a custom avatar of its choosing.</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/account.png"/> <figcaption>
+            <h4>Account Page</h4>
+        </figcaption>
+</figure>
+
+<h2 id="new-post">New Post</h2>
+<p>This page contains the wt-forms class to receive the data of the user in the fields of a Title of a post and content of it.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/new_post.png"/> <figcaption>
+            <h4>New Post Page</h4>
+        </figcaption>
+</figure>
+
+<h2 id="modify-delete-post">Modify/ Delete post</h2>
+<ul>
+<li>Custom editing of the post if available for the user in case the user&rsquo;s post needs to be edited.</li>
+<li>For the deletion section an advanced feature is been employed with the help of Bootstrap&rsquo;s Modal. It pop ups a dialog box that allows a user to reconsider the action.</li>
+<li>If the user then again selects &lsquo;Delete&rsquo;, the post is then removed from the database.</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/postedit.png"/> <figcaption>
+            <h4>Post modification</h4>
+        </figcaption>
+</figure>
+
+<h2 id="security">Security</h2>
+<p>The security feature employed in order to protect a user&rsquo;s account consists of bcrypting the password and matching it when a user try&rsquo;s to log in. This enables the database to store the hashed passwords instead of the password entered by the user.</p>
+<p>Also the blog contains a user&rsquo;s own profile page where they can see the list of posts especially made by them. Updating of profile picture as well as saving it in database is done but only after reshaping it into a smaller size which done with the help of &lsquo;PIL&rsquo; library of python.</p>
+<p>The &lsquo;Forget Password&rsquo; link helps in giving a user the flexibility to gain access to the account even if the password is not remembered by the user. It sends an email containing Password reset link ('_external')</p>
+<h2 id="employing-the-usage-of-blueprints">Employing the usage of Blueprints</h2>
+<p>The app developed contains various extensions and libraries which help in running the python script in the form if a package. Flask&rsquo;s official documentation promotes the usage of blueprints in order to have the same extensions run different application. This allows us to employ the services of Classes in python and take benefit of its Object Oriented Programming services and the concept of inheritance.</p>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Flask_blog/text_editor.png"/> <figcaption>
+            <h4>Hierarchy</h4>
+        </figcaption>
+</figure>
+
+<p><a href="https://github.com/Code-SameerKhan/Flask-server">Link to GitHub repository</a></p>
+
+      </div>
+
+
+      <footer>
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Welcome to my portfolio.</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2020
+         Sameer Khan 
+      
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="https://Code-SameerKhan.github.io/portfolio/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+  </body>
+
+</html>

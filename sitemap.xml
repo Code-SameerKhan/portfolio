@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/authors/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/categories/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/tags/flask/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/posts/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/tags/python/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/tags/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/categories/web-application/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Code-SameerKhan.github.io/portfolio/posts/flask-web-server/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://Code-SameerKhan.github.io/portfolio/tags/ann/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
@@ -13,42 +63,12 @@
   </url>
   
   <url>
-    <loc>https://Code-SameerKhan.github.io/portfolio/authors/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://Code-SameerKhan.github.io/portfolio/categories/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://Code-SameerKhan.github.io/portfolio/tags/deep-learning/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://Code-SameerKhan.github.io/portfolio/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://Code-SameerKhan.github.io/portfolio/posts/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://Code-SameerKhan.github.io/portfolio/authors/sameer-khan/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://Code-SameerKhan.github.io/portfolio/categories/supervised-learning/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://Code-SameerKhan.github.io/portfolio/tags/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
   

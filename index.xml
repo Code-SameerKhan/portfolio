@@ -6,7 +6,16 @@
     <description>Recent content on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Code-SameerKhan.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web application based on Flask</title>
+      <link>https://Code-SameerKhan.github.io/portfolio/posts/flask-web-server/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Code-SameerKhan.github.io/portfolio/posts/flask-web-server/</guid>
+      <description>Build a blogging website using Flask   Flask    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.  Objective  To build website where a user can make account, make posts and upload photos as a profile picture.</description>
+    </item>
+    
     <item>
       <title>Artificial Neural Network based Classification</title>
       <link>https://Code-SameerKhan.github.io/portfolio/posts/ann-classification/</link>
