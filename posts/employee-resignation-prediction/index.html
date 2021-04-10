@@ -7,15 +7,15 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Sameer Khan">
-    <meta name="description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90.">
+    <meta name="description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 95% in correctly predicting the outcome.">
     <meta name="keywords" content="data science,portfolio,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Employee Resignation Prediction"/>
-<meta name="twitter:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90."/>
+<meta name="twitter:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 95% in correctly predicting the outcome."/>
 
     <meta property="og:title" content="Employee Resignation Prediction" />
-<meta property="og:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90." />
+<meta property="og:description" content="Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 95% in correctly predicting the outcome." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/" />
 <meta property="article:published_time" content="2019-01-29T00:00:00+00:00" />
@@ -138,7 +138,7 @@
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              2-minute read
+              3-minute read
             </span>
           </div>
           <div class="authors">
@@ -150,9 +150,7 @@
 
           <div class="tags">
   <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="https://Code-SameerKhan.github.io/portfolio/tags/logistic-regression/">Logistic Regression</a>
-      <span class="separator">•</span>
-    <a href="https://Code-SameerKhan.github.io/portfolio/tags/decision-tree-classifier/">Decision Tree classifier</a>
+    <a href="https://Code-SameerKhan.github.io/portfolio/tags/support-vector-machine/">Support Vector Machine</a>
       <span class="separator">•</span>
     <a href="https://Code-SameerKhan.github.io/portfolio/tags/machine-learning/">Machine learning</a></div>
 
@@ -172,8 +170,9 @@ features are employed.</li>
 variable on the independent variables.</li>
 <li>Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes
 classifier using GridSearchCV to reach best model.</li>
-<li>Achieved an accuracy of 90.62% in correctly predicting the
-outcome.</li>
+<li>Achieved an accuracy of 95% in correctly predicting the outcome.</li>
+<li>Developed a public facing API for live user interaction using Streamlit imported as library.</li>
+<li>Deployed the Web App based on cloud application platform as a service through Heroku.</li>
 </ul>
 <p>Getting to understand employees is a major task in any successful organization. Various factors combine enough to create a snowball effect in the minds of employee on whether he/she sees the future of oneself in their current working environment.</p>
 <p>Some of the major factors include Salary, Satisfaction level, promotion, average working hours, etc… By correlating the different features we can arrive on a decision based on the prediction. Since the output here is whether the employee leaves or not therefore it is termed as a classification problem.</p>
@@ -210,24 +209,74 @@ quit.</p>
 <p>Finally a reward for studious work is also expected from employees as we can see. Based on the data, promotion in last 5 years plays a role to defining a future of an individual with the group.</p>
 </li>
 </ul>
-<h1 id="model-building">Model building</h1>
-<p>Since this is a classification problem we can employ following algorithms -</p>
+<h1 id="preprocessing">Preprocessing</h1>
 <ul>
-<li>Logistic regressor</li>
-<li>Decision tree</li>
-<li>Naive Bayes</li>
-<li>Support Vector Machine (SVM)</li>
-<li>Random Forest</li>
+<li>It consisted of 3 major parts:</li>
 </ul>
+<ol>
+<li>Handling class imbalance</li>
+</ol>
+<ul>
+<li>It is done using <a href="https://www.geeksforgeeks.org/ml-handling-imbalanced-data-with-smote-and-near-miss-algorithm-in-python/">SMOTE</a></li>
+</ul>
+<ol start="2">
+<li>Handling non numerical features</li>
+</ol>
+<ul>
+<li>Achieved with help of Dummy variables created with Pandas get_dummy function</li>
+</ul>
+<ol start="3">
+<li>Scaling the features</li>
+</ol>
+<ul>
+<li>Sklearn&rsquo;s preprocessing library contains Standard Scalar which scales the data points with help of mean and standard deviation of the data.</li>
+</ul>
+<h1 id="model-building">Model building</h1>
+<ul>
+<li>A classification model attempts to draw some conclusion from observed values.</li>
+<li>Given continuous or categorical or both features, the model classifies according to the target class.</li>
+<li>Popular algorithms that can be used for binary classification include:</li>
+</ul>
+<ol>
+<li>Logistic Regression</li>
+<li>k-Nearest Neighbors</li>
+<li>Decision Trees</li>
+<li>Support Vector Machine</li>
+<li>Naive Bayes</li>
+</ol>
 <h1 id="result">Result</h1>
-<p>Using GridSearchCV we can pass a list of different values in a dictionary of parameters and with the help of it we can determine best model as a well as best parameters.</p>
+<ul>
+<li>sklearn&rsquo;s Ensemble library lets us access Random Forest ML technique which helps in determining important features</li>
+<li>with the help of Streamlit&rsquo;s button function, features can be showcased to the user.</li>
+</ul>
 <figure>
-    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/model_employee.png"/> <figcaption>
-            <h4>GridSearchCV model and parameters determination</h4>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/features.png"/> <figcaption>
+            <h4>Most Important Features</h4>
         </figcaption>
 </figure>
 
-<p>In the end we can say Decision tree classifier works best giving an accuracy of 90.62 %</p>
+<p>By employing the GridSearchCV on the above classifying algorithms we conclude-</p>
+<p>SVC of support vector machine to be optimum with 95% accuracy</p>
+<h1 id="user-interface">User Interface</h1>
+<ul>
+<li>Creating a user interface lets new users to visualize practical application of a machine learning model.</li>
+<li>This WebApp is based on open source app framework called Streamlit.</li>
+<li>More about this framework <a href="https://streamlit.io/">Here</a></li>
+<li>Here is demo of the API</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/employee-demo.gif"/> <figcaption>
+            <h4>WebApp Demo</h4>
+        </figcaption>
+</figure>
+
+<ul>
+<li>With user clicking a button, important features can be seen.</li>
+</ul>
+<figure>
+    <img src="https://Code-SameerKhan.github.io/portfolio/images/Employee/Emp-app-features.gif"/> 
+</figure>
+
 <p><a href="https://github.com/Code-SameerKhan/Employee-resignation-prediction">Link to GitHub repository</a></p>
 
       </div>

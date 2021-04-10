@@ -17,14 +17,5 @@
 Similar to the regular numerical nature of data, images are identified by the machine in the form of array consisting of numerical values and depending upon the color scheme it can be divided into 3 dimension or 2 dimension (i.</description>
     </item>
     
-    <item>
-      <title>Employee Resignation Prediction</title>
-      <link>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</link>
-      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://Code-SameerKhan.github.io/portfolio/posts/employee-resignation-prediction/</guid>
-      <description>Summary  Created a tool that predicts when an employee is going to resign in order to help perfect employee management and improve working space environment. Based on the public release data available on Kaggle, the features are employed. Engineered features to calculate dependencies of the target variable on the independent variables. Optimized Logistic regression, Random Forest, Decision Tree and Naive Bayes classifier using GridSearchCV to reach best model. Achieved an accuracy of 90.</description>
-    </item>
-    
   </channel>
 </rss>
